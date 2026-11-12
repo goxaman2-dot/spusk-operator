@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 108 108">
+<title>Мастер</title>
+<path d="M2,54 A52,52 0 1,1 106,54 A52,52 0 1,1 2,54 Z" fill="#1E1E24"/>
+<path d="M8,54 A46,46 0 1,1 100,54 A46,46 0 1,1 8,54 Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/>
+<path d="M10,74 L98,86" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="12" stroke-linecap="round"/>
+<path d="M50,79 L40,72" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round"/>
+<path d="M48,82 L36,80" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round"/>
+<path d="M47,76 L41,64" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round"/>
+<path d="M52,79 L86,71" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M52,58 L44,44" fill="none" stroke="#FFFFFF" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46,47 L36,60" fill="none" stroke="#FFFFFF" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46,45 L59,41" fill="none" stroke="#FFFFFF" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M52,58 L63,63 L67,74" fill="none" stroke="#FFFFFF" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M52,58 L59,67 L61,76" fill="none" stroke="#FFFFFF" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35.5,38.5 A6,6 0 1,1 47.5,38.5 A6,6 0 1,1 35.5,38.5 Z" fill="#FFFFFF"/>
+<path d="M37,95 L42,90 L47,95" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49,95 L54,90 L59,95" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M61,95 L66,90 L71,95" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M54.0,8.5 L55.41,12.06 L59.23,12.3 L56.28,14.74 L57.23,18.45 L54.0,16.4 L50.77,18.45 L51.72,14.74 L48.77,12.3 L52.59,12.06 Z" fill="#F2C230"/>
+</svg>

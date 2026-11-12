@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 108 108">
+<title>Свой профиль</title>
+<path d="M2,54 A52,52 0 1,1 106,54 A52,52 0 1,1 2,54 Z" fill="#1565C0"/>
+<path d="M8,54 A46,46 0 1,1 100,54 A46,46 0 1,1 8,54 Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="4 3"/>
+<path d="M48,37 L58,37 A2,2 0 0,1 60,39 L60,42 A2,2 0 0,1 58,44 L48,44 A2,2 0 0,1 46,42 L46,39 A2,2 0 0,1 48,37 Z" fill="#FFFFFF"/>
+<path d="M39,42 L69,42 A5,5 0 0,1 74,47 L74,65 A5,5 0 0,1 69,70 L39,70 A5,5 0 0,1 34,65 L34,47 A5,5 0 0,1 39,42 Z" fill="#FFFFFF"/>
+<path d="M46,56 A8,8 0 1,1 62,56 A8,8 0 1,1 46,56 Z" fill="none" stroke="#1565C0" stroke-width="3.5"/>
+<path d="M66,74 A10,10 0 1,1 86,74 A10,10 0 1,1 66,74 Z" fill="#F2C230"/>
+<path d="M76,68 L76,80 M70,74 L82,74" fill="none" stroke="#1565C0" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 108 108">
+<title>Новичок</title>
+<path d="M2,54 A52,52 0 1,1 106,54 A52,52 0 1,1 2,54 Z" fill="#2E8B57"/>
+<path d="M8,54 A46,46 0 1,1 100,54 A46,46 0 1,1 8,54 Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/>
+<path d="M10,74 L98,86" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="12" stroke-linecap="round"/>
+<path d="M45,47 L40,72" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M63,47 L68,72" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M36,76 L51,70" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M72,76 L57,70" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M54,33 L54,51" fill="none" stroke="#FFFFFF" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M54,38 L45,47" fill="none" stroke="#FFFFFF" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M54,38 L63,47" fill="none" stroke="#FFFFFF" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M54,51 L47,70" fill="none" stroke="#FFFFFF" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M54,51 L61,70" fill="none" stroke="#FFFFFF" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M48,26 A6,6 0 1,1 60,26 A6,6 0 1,1 48,26 Z" fill="#FFFFFF"/>
+<path d="M49,95 L54,90 L59,95" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -17,6 +17,7 @@ enum class Mode(val title: String) {
 object Hub {
     lateinit var app: Context; private set
     lateinit var speaker: Speaker; private set
+    val beeper = Beeper()
     lateinit var store: ProfileStore; private set
     private val main = Handler(Looper.getMainLooper())
 
@@ -136,6 +137,7 @@ object Hub {
         val was = mode
         if (was == Mode.NAV || was == Mode.SIM) finishedNav = nav
         nav = null
+        beeper.stop()
         simRunning = false
         mode = Mode.IDLE
         LocationService.stop(app)
@@ -156,7 +158,10 @@ object Hub {
         prevFix = f
         lastFix = f
         when (mode) {
-            Mode.NAV, Mode.SIM -> navState = nav?.onFix(f)
+            Mode.NAV, Mode.SIM -> {
+                navState = nav?.onFix(f)
+                navState?.let { beeper.update(it.beepSide, it.beepLevel) }
+            }
             Mode.TRACE, Mode.EDGE_L, Mode.EDGE_R -> {
                 val last = rec.lastOrNull()
                 if (f.acc <= 25 && (last == null || Geo.haversine(last.lat, last.lon, f.lat, f.lon) >= 1.0))

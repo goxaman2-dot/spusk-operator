@@ -153,6 +153,11 @@ class MainActivity : Activity() {
         root.addView(btn("🎤 Сказать команду голосом") { listenOperator() })
 
         root.addView(CheckBox(this).apply {
+            text = "Писк у края трассы: левый край – в левом наушнике (низкий тон), правый – в правом (высокий)"
+            isChecked = Hub.beeper.enabled
+            setOnCheckedChangeListener { _, on -> Hub.beeper.enabled = on; if (!on) Hub.beeper.stop() }
+        })
+        root.addView(CheckBox(this).apply {
             text = "Не гасить экран"
             setOnCheckedChangeListener { _, on ->
                 if (on) window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)

@@ -26,6 +26,8 @@ enum class ErrClass(val title: String, val color: Int) {
 class NavState(
     val along: Double, val total: Double, val e: Double, val lambda: Double, val eps: Double,
     val vhat: Double, val vref: Double, val dy: Double, val width: Double, val cls: ErrClass, val q: Double,
+    val beepSide: Int = 0,      // +1 – близко левый край, −1 – правый, 0 – тишина
+    val beepLevel: Double = 0.0,
 )
 
 data class TrailPt(val p: V2, val cls: ErrClass)
@@ -220,7 +222,22 @@ class Navigator(val prof: Profile, val prm: Params, private val emit: (Cmd) -> U
         log.append("$now;${"%.6f".format(java.util.Locale.US, f.lat)};${"%.6f".format(java.util.Locale.US, f.lon)};")
             .append("${f.acc.r1()};${v.r1()};${vref.r1()};${hit.dist.r1()};${lambda.r2()};${eps.r2()};${cls.name};$pendingLogCmd\n")
 
-        return NavState(hit.along, line.total, hit.dist, lambda, eps, vhat, vref, dy, w, cls, q)
+        val (bs, bl) = edgeProximity(lambda, w, f.acc)
+        return NavState(hit.along, line.total, hit.dist, lambda, eps, vhat, vref, dy, w, cls, q, bs, bl)
+    }
+
+    /**
+     * Близость края для стереописка. Зона писка начинается с 0,8·λдоп (не ближе 0,4 к линии)
+     * и доходит до максимума на самом краю (|λ| = 1). Работает только при записанных краях
+     * и коридоре заметно шире погрешности GPS – те же условия, что у команд «Левый/Правый край».
+     */
+    fun edgeProximity(lambda: Double, w: Double, acc: Double): Pair<Int, Double> {
+        if (widthConditional || acc > 15.0 || w <= 3 * acc) return 0 to 0.0
+        val start = max(0.4, 0.8 * prm.lambdaMax)
+        val a = abs(lambda)
+        if (a < start) return 0 to 0.0
+        val level = ((a - start) / (1.0 - start)).coerceIn(0.0, 1.0)
+        return (if (lambda > 0) 1 else -1) to level
     }
 
     /** Антиповтор и подавление второстепенных команд перед поворотом (раздел 7 ТЗ). */
